@@ -3,6 +3,7 @@ import { Space_Mono, Work_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { CountdownProvider } from "@/utils/Context/CountdownContext";
 
 const workSans = Work_Sans({
     variable: "--font-work-sans",
@@ -28,11 +29,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${workSans.className} ${spaceMono.variable} antialiased bg-background text-default`}>
-        <Navbar />
-        <main className="overflow-x-hidden">
-            {children}
-        </main>
-        <Footer />
+        <CountdownProvider>
+            <Navbar />
+            <main className="overflow-x-hidden">
+                {children}
+            </main>
+            <Footer />
+        </CountdownProvider>
       </body>
     </html>
   );
