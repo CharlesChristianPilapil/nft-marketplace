@@ -34,7 +34,7 @@ const ArtistCard = ({
                     whileHover={{ scale: .95, boxShadow: BOX_SHADOW.CTA }}
                     viewport={{ once: true, amount: .5 }}
                     href={`/artist/${artist.username}`}
-                    className="inline-block rounded-[20px]"
+                    className="inline-block rounded-[20px] w-full"
                 >
                     <div className="flex large:flex-col gap-5 bg-background-secondary p-5 rounded-[20px]">
                         <div className="grid large:place-items-center relative">

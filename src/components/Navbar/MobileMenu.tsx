@@ -74,7 +74,7 @@ const MobileMenu = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1, transition: { when: 'beforeChildren' } }}
                         exit={{ opacity: 0 }}
-                        className="absolute top-[72px] medium:top-[74px] min-h-[calc(100vh-73px)] w-full left-0 z-10 bg-white bg-black/15 px-5"
+                        className="absolute top-[72px] medium:top-[74px] min-h-[calc(100vh-73px)] w-full left-0 z-50 bg-black/15 px-5"
                     >
                         <motion.div 
                             initial={{opacity: 0, y: -10}}
