@@ -9,7 +9,16 @@ import utility_bg from '@images/Category/utilities-bg.svg'
 import sport_bg from '@images/Category/sport-bg.svg'
 import virtual_bg from '@images/Category/virtual-worlds-bg.svg'
 
-import { Paintbrush } from 'lucide-react'
+import { 
+    Paintbrush, 
+    Camera, 
+    Music, 
+    Video, 
+    Gift, 
+    Activity, 
+    Dumbbell, 
+    Globe 
+  } from 'lucide-react';
 
 export interface CategoryCardInterface {
     category: string;
@@ -26,36 +35,36 @@ export const CATEGORY: CategoryCardInterface[] = [
     {
         category: 'Collectibles',
         src: collectibles_bg,
-        icon: Paintbrush
+        icon: Gift
     },
     {
         category: 'Music',
         src: music_bg,
-        icon: Paintbrush
+        icon: Music
     },
     {
         category: 'Photography',
         src: photography_bg,
-        icon: Paintbrush
+        icon: Camera
     },
     {
         category: 'Videos',
         src: videos_bg,
-        icon: Paintbrush
+        icon: Video
     },
     {
         category: 'Utility',
         src: utility_bg,
-        icon: Paintbrush
+        icon: Activity
     },
     {
         category: 'Sport',
         src: sport_bg,
-        icon: Paintbrush
+        icon: Dumbbell
     },
     {
         category: 'Virtual Worlds',
         src: virtual_bg,
-        icon: Paintbrush
+        icon: Globe
     }
 ]

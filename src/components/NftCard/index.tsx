@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { opacityVariant } from "@/utils/animation/motion";
-import { BOX_SHADOW } from "@/utils/constants/style";
 
 interface ExtendedInterface extends NftCardInterface {
     isHidden?: boolean;
@@ -30,7 +29,7 @@ const NftCard = ({
             className={`${isHidden ? 'medium:hidden large:block' : ''} rounded-2xl`}
             initial='initial'
             whileInView='animate'
-            whileHover={{ scale: .95, boxShadow: BOX_SHADOW.CTA }}
+            whileHover={{ scale: .95 }}
             exit={{ opacity: 0 }}
             viewport={{ once: true, amount: 0.5 }}
             layout

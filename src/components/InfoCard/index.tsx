@@ -1,7 +1,6 @@
 'use client';
 import { scaleVariant } from "@/utils/animation/motion";
 import { InfoDataType } from "@/utils/constants/info-data";
-import { BOX_SHADOW } from "@/utils/constants/style";
 import { motion, Variants } from "framer-motion";
 import Image from "next/image";
 
@@ -25,7 +24,6 @@ const InfoCard = ({ title, image, description, delay = 0 }: InfoDataType & { del
         },
         hovering: {
             scale: .95,
-            boxShadow: BOX_SHADOW.CTA,
         }
     };
     

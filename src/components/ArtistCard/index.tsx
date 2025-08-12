@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { opacityVariant, scaleVariant } from "@/utils/animation/motion";
-import { BOX_SHADOW } from "@/utils/constants/style";
 
 interface ArtistCardInterface {
     variant: 'tab' | 'list';
@@ -31,14 +30,14 @@ const ArtistCard = ({
                     variants={opacityVariant(.3, .5)}
                     initial='initial'
                     whileInView='animate'
-                    whileHover={{ scale: .95, boxShadow: BOX_SHADOW.CTA }}
+                    whileHover={{ scale: .95 }}
                     viewport={{ once: true, amount: .5 }}
                     href={`/artist/${artist.username}`}
                     className="inline-block rounded-[20px] w-full"
                 >
                     <div className="flex large:flex-col gap-5 bg-background-secondary p-5 rounded-[20px]">
                         <div className="grid large:place-items-center relative">
-                            <p className="absolute top-0 left-0 bg-background text-captions-label px-[10px] py-[4px] rounded-full text-sm"> {artist.rank} </p>
+                            <p className="absolute top-0 left-0 bg-background text-captions-label px-[10px] py-[4px] rounded-full text-sm z-10"> {artist.rank} </p>
                             <MotionImage
                                 variants={scaleVariant(.8, .5, .5)}
                                 viewport={{ once: true }}

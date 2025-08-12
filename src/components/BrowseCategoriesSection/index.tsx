@@ -4,7 +4,6 @@ import CategoryCard from "../CategoryCard";
 import Section from "../Section";
 import { motion } from "framer-motion";
 import { scaleVariant } from "@/utils/animation/motion";
-import { BOX_SHADOW } from "@/utils/constants/style";
 
 const BrowseCategoriesSection = () => {
 
@@ -17,7 +16,7 @@ const BrowseCategoriesSection = () => {
                         variants={scaleVariant(.2, .3, .75)}
                         initial='initial'
                         whileInView='animate'
-                        whileHover={{ scale: .95, boxShadow: BOX_SHADOW.CTA, transition: { delay: 0 } }}
+                        whileHover={{ scale: .95, transition: { delay: 0 } }}
                         viewport={{ once: true, amount: .5 }}
                         key={index} 
                         className="shadow-gray-900 drop-shadow-md rounded-[20px]"
